@@ -39,9 +39,9 @@
 - (std::shared_ptr<facebook::react::TurboModule>)
     getTurboModule:(const std::string &)name
          jsInvoker:(std::shared_ptr<facebook::react::CallInvoker>)jsInvoker {
-  // if (name == "NativeSampleModule") {
-  //   return std::make_shared<facebook::react::NativeSampleModule>(jsInvoker);
-  // }
+  if (name == "NativeSampleModule") {
+    return std::make_shared<facebook::react::NativeSampleModule>(jsInvoker);
+  }
   return nullptr;
 }
 

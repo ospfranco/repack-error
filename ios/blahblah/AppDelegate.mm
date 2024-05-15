@@ -45,4 +45,9 @@
   return nullptr;
 }
 
+- (BOOL)bridgelessEnabled
+{
+    return NO;
+}
+
 @end
